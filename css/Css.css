@@ -4,7 +4,7 @@
     box-sizing: border-box;
     color: rgb(209, 255, 247);
     font-family: 'Courier New', Courier, monospace;
-    
+    font-weight: bold;
 }
 
 header{
@@ -23,6 +23,7 @@ body {
 #head_img {
     height: 90px;
     width: 200px;
+    
 }
 .Hamburger_line{
     background: black;
@@ -57,17 +58,17 @@ font-weight: bold;
     color: black
 }
 #Hamburger:hover{
-    cursor: progress;
+    cursor: crosshair;
 }
 
 
 #wrapper{
-
-    width: 100vw ;
-    height: 100vh;
+    
+    width: 90vw ;
+    height: 90vh;
     display: grid;
-    grid-template-columns: repeat(5,1);
-    grid-template-rows: repeat(2,1);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 10px;
     grid-template-areas: 
      "a1 a1 a2 a2 a3 a3"
@@ -78,12 +79,15 @@ font-weight: bold;
     .article_1 {
         background-color: rgba(0, 0, 0, 0.116);
         grid-area: a1;
+        box-sizing: content-box
     }
     
     .article_2 {
-        background-color: rgba(0, 0, 0, 0.116);
+        background-color: rgba(0, 0, 0, 0.171);
         grid-area: a2;
-    
+        text-align: center;
+        color: whitesmoke;
+        font-weight: bold;
     }
     .article_3 {
         background-color: rgba(0, 0, 0, 0.116);
@@ -93,14 +97,15 @@ font-weight: bold;
     }
     .article_4 {
         background-color: rgba(0, 0, 0, 0.116);
-
-     
+        background-image: url("../img/istockphoto-1300476665-170667a.jpg");
+        background-size: contain; 
         grid-area: a4;
+       
     
     }
     .article_5 {
         background-color: rgba(0, 0, 0, 0.116);
-
+        
         grid-area: a5;
     
     }
@@ -109,12 +114,6 @@ font-weight: bold;
         background-color: rgba(0, 0, 0, 0.116);
         grid-area: a6;
     }
-
-
-
-
-
-
 
 
 
