@@ -1,9 +1,9 @@
 *{
-    margin: 5px;
-    padding: 0;
+    margin: 10px;
+    padding: 0px;
     box-sizing: border-box;
-    color: rgb(209, 255, 247);
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(150, 189, 182);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ nav {
 .meny_link{
     text-decoration:wavy;
     
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 font-weight: bold;
 }
@@ -71,49 +71,67 @@ font-weight: bold;
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
     grid-template-areas: 
-     "a1 a1 a2 a2 a3 a3"
-     "a1 a1 a4 a4 a5 a5"
-     "a1 a1 a6 a6 a5 a5"
+     "a1 a1 a2 a2 a2 a2"
+     "a1 a1 a3 a3 a3 a3"
+     "a4 a4 a3 a3 a3 a3"
     }
     
     .article_1 {
         background-color: rgba(0, 0, 0, 0.116);
         grid-area: a1;
-        box-sizing: content-box
-    }
-    
-    .article_2 {
-        background-color: rgba(0, 0, 0, 0.171);
-        grid-area: a2;
-        text-align: center;
-        color: whitesmoke;
-        font-weight: bold;
-    }
-    .article_3 {
-        background-color: rgba(0, 0, 0, 0.116);
-
-        grid-area: a3;
-    
-    }
-    .article_4 {
-        background-color: rgba(0, 0, 0, 0.116);
-        background-image: url("../img/istockphoto-1300476665-170667a.jpg");
-        background-size: contain; 
-        grid-area: a4;
-       
-    
-    }
-    .article_5 {
-        background-color: rgba(0, 0, 0, 0.116);
+        box-sizing: content-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
         
-        grid-area: a5;
+
+    }
+
+    .article_1 * {
+        color: rgba(150, 139, 168, 0.945) ;
+
+    }
     
-    }
+    
 
-    .article_6{
+    .article_2 {
         background-color: rgba(0, 0, 0, 0.116);
-        grid-area: a6;
+        grid-area: a2;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        background-image:  url("../img/bild.png");;
+        background-size: cover;
+        
+        
+    }
+    .article_2 *{
+        color: whitesmoke;
+
+
     }
 
 
+.article_3 {
+        background-color: rgba(0, 0, 0, 0.363);
+        grid-area: a3;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+        list-style-type: none;
+    }
+    .article_3 * {
+        color: whitesmoke;
+    }
 
+.article_4 {
+    grid-area: a4;
+}
+h4{ 
+    font-size: 20px;
+    color: whitesmoke !important;
+}
+h2{
+    font-size: 40px;
+    color: lightsteelblue !important;
+    font-weight: bold;
+}
